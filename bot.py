@@ -68,6 +68,6 @@ async def report(u, c):
 app = ApplicationBuilder().token(os.getenv("BOT_TOKEN")).build()
 app.add_handler(CommandHandler("start", start))
 app.add_handler(CommandHandler("set", set_total))
-app.add_handler(CommandHandler("сегодня", today))
-app.add_handler(CommandHandler("отчет", report))
+app.add_handler(CommandHandler("segodnya", today))  # команда на латинице
+app.add_handler(CommandHandler("otchet", report))  # команда на латинице
 app.run_polling()
